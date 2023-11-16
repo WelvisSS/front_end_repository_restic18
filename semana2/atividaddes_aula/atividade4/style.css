@@ -1,0 +1,32 @@
+h2 {
+    color: yellow;
+}
+
+h5 {
+    color: yellow;
+}
+
+.Roupas {
+    color: blue;
+}
+
+.caixa p {
+    color: blue;
+}
+
+.caixa p.alimentos {
+    color: green;
+}
+
+.caixa p.alimentos+ul li {
+    color: rosybrown;
+}
+
+.caixa .moveis li:first-child,
+.caixa .moveis li:nth-child(2) {
+    color: rosybrown;
+}
+
+.caixa .moveis li {
+    color: green;
+}

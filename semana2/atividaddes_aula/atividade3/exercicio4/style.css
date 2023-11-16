@@ -1,0 +1,25 @@
+.caixa {
+    background-color: brown;
+    padding: 10px;
+
+}
+
+.caixa div {
+    background-color: blueviolet;
+}
+
+.caixa div div {
+    background-color: red;
+}
+
+.texto-branco {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.texto-amarelo {
+    color: yellow;
+    font-size: 30px;
+    font-weight: bold;
+}
