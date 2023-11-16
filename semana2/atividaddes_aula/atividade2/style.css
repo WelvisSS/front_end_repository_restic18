@@ -1,0 +1,53 @@
+.square {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.burlywood {
+    background-color: burlywood;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    padding-top: 40px;
+}
+
+.text1 {
+    color: yellow;
+    font-size: 20px;
+    padding-top: 40px;
+}
+
+.text2 {
+    color: red;
+    font-size: 20px;
+    padding-top: 40px;
+}
+
+.text3 {
+    color: blue;
+    font-size: 20px;
+    padding-top: 40px;
+}
+
+.text4 {
+    color: burlywood;
+    font-size: 20px;
+    padding-top: 40px;
+}

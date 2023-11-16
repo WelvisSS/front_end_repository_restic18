@@ -1,0 +1,21 @@
+.titulo {
+    color: black;
+}
+
+.link1 a {
+    color: red;
+    font-size: 40;
+    font-weight: bold;
+}
+
+.link2 a {
+    color: black;
+    font-size: 40;
+    font-weight: bold;
+}
+
+.link3 a {
+    color: green;
+    font-size: 40;
+    font-weight: bold;
+}
