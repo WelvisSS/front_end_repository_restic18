@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            box-sizing: border-box;
+        }
+        *, *:before, *:after {
+            box-sizing: inherit;
+        }
+
+        *{
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #14293D;
+            /* width: 100vw;
+            height: 100vh; */
+        }
+
+        .wrapper {
+            margin: 0 0 20px 0;
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            grid-gap: 5px;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 5% 50% 5% 40%;
+        }
+
+        .box {
+            background-color: #444;
+            color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            font-size: 150%;
+        }
+
+        .item1 {
+            grid-column: 1 / 5;
+            background-color: green;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+
+        .item2 {
+            background-color: maroon;
+            grid-column: 1 / 1;
+            grid-row: 2 / 4;
+            grid-row-start: 2;
+        }
+
+        .item3 {
+            grid-column: 2 / 4;
+            grid-row: 2 / 4;
+        }
+
+        .item4 {
+            grid-column: 4 / 5;
+            grid-row: 2 / 4;
+            background-color: pink;
+        }
+
+        /* .item5 {
+            background-color: red;
+            grid-column: 1 / 4;
+            grid-row: 5 / 5;
+        } */
+
+        .item5 {
+            background-color: red;
+            grid-column: 1 / 3;
+            grid-row: 4 / 5;
+        }
+
+        .item6 {
+            background-color: blue;
+            grid-column: 3 / 5;
+            grid-row: 4 / 5;
+        }
+
+        .item7 {
+            background-color: grey;
+            grid-column: 1 / 5;
+            grid-row: 5/5;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: rgb(173, 179, 201);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 50px;
+            /* Altura do footer */
+        } 
+
+        p {
+            text-align: justify;
+            font-size: 20px;
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+
+        .container-images{
+            display: flex;
+            flex-direction: column;
+        }
+
+        
+        @media (max-width: 1000px) {
+            .wrapper {
+                margin: 0 0 20px 0;
+                width: 100%;
+                height: 100vh;
+                display: grid;
+                grid-gap: 5px;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-template-rows: 5% 30% 30% 30% ;
+                align-items: center;
+                justify-content: center;
+            }
+            .item1 {
+                grid-column: 2 / 4;
+                grid-row: 1 / 2;
+                background-color: green;
+                display: flex;
+            }
+
+            .item2 {
+                background-color: maroon;
+                grid-column: 2 / 4;
+                grid-row: 2 / 4;
+            }
+
+            .item3 {
+                background-color: aqua;
+                grid-column: 2 / 4;
+                grid-row: 4 / 6;
+            }
+
+            .item4 {
+                grid-column: 2 / 4;
+                grid-row: 6 / 8;
+                background-color: pink;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="box item1">Universidade</div>
+        <div class="box item2">
+            <h3>Menu</h3>
+            <h5>Centro e Grupos de Pesquisa</h5>
+            <h5>Internacional</h5>
+            <h5>Laboratórios</h5>
+            <h5>Mapa da UESC</h5>
+            <h5>Núcleos</h5>
+            <h5>Projetos</h5>
+            <h5>Protocolos Digitais</h5>
+        </div>
+        <div class="box item3">
+            <h3>Lorem dolar</h3>
+            <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, esse? In exercitationem
+                voluptate, aspernatur quos porro consequatur aperiam, odit non dolorum, cum vel fugit aut.
+                Blanditiis nostrum sed quasi placeat?</p>
+            <h3>Loren ipsum</h3>
+            <p class="p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, excepturi neque
+                officia ratione
+                obcaecati, quas iste quod eos ut velit libero odio, culpa ipsa! Sit facere sapiente officia iure
+                inventore.</p>
+        </div>
+        <div class="box item4">
+                <h3>Destaques</h3>
+                <div class="container-images">
+                    <img class="img"
+                        src="https://services.meteored.com/img/article/inteligencia-artificial-aprende-a-reconstruir-imagens-vistas-por-pessoas-ciencia-fotos-1679175318563_768.jpg"
+                        alt="">
+                    <img class="img"
+                        src="https://s2-techtudo.glbimg.com/CDCDKUhS0FMmWH6daMavnixT6cg=/0x0:1024x609/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2022/c/u/15eppqSmeTdHkoAKM0Uw/dall-e-2.jpg"
+                        alt="">
+                </div>
+            </div>
+            <div class="box item5">
+                <h3 class="topicos">SERVIÇOS</h3>
+                <h5>Ajuste de matrícula</h5>
+                <h5>Revisão de prova final</h5>
+                <h5>Ativar matrícula</h5>
+            </div>
+            <div class="box item6">
+                <h3>Resultados</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique magnam, voluptas in expedita dolor ea molestiae incidunt voluptates? Eius cumque neque debitis assumenda dicta incidunt optio et harum, facilis consequuntur?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque dolorem, voluptates accusantium dicta totam consequatur obcaecati iusto cum blanditiis cupiditate quod, fugit accusamus, laboriosam illo inventore. Earum, facere! Eum, assumenda.</p>
+            </div>
+            <div class="box item7">Footer</div>
+        </div>
+</body>
+</html>
