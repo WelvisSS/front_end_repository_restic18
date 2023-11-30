@@ -5,8 +5,6 @@ class Tarefa {
     }
 }
 
-// ... (código anterior)
-
 // Função para remover a tarefa do localStorage
 function removeTarefaDoStorage(tarefaTexto) {
     let tarefas = JSON.parse(localStorage.getItem('tarefas')) || [];
