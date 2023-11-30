@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    gap: 40px;
+    padding: 12px;
+    justify-content: center;
+}
+
+.roteiros-viagens {
+    display: flex;
+    padding: 20px;
+    border-radius: 6px;
+    max-width: 200px;
+    height: 450px;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(204, 173, 233);
+}
+
+
+img {
+    width: 150px;
+}
+
+.destino {
+    font-size: 18px;
+    font-weight: bold;
+    color: purple;
+    padding: 16px;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgb(133, 209, 57);
+    color: white;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    border: 0px transparent;
+    /* margin-top: 6px; */
+}
+
+.roteiro {
+    font-size: 18px;
+    font-weight: 400;
+    color: purple;
+    padding: 16px;
+}
+
+.preco {
+    font-size: 20px;
+    font-weight: bold;
+    color: purple;
+    padding: 4px;
+}
+
+.informacoes {
+    font-size: 14px;
+    font-weight: 400;
+    color: purple;
+    padding: 1px;
+}
+
+.parcelamento {
+    font-size: 14px;
+    font-weight: 400;
+    color: purple;
+    padding: 1px;
+}
+
+
+
+@media (max-width: 1200px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+}
