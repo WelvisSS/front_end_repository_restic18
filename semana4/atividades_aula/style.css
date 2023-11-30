@@ -1,0 +1,90 @@
+/* Estilo para o body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilo para o formulário */
+#formTarefa {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#inputTarefa {
+    padding: 8px;
+    margin-right: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+#btnAdicionar {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+#btnAdicionar:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para a lista de tarefas */
+#listaTarefas {
+    list-style: none;
+    padding: 0;
+    width: 300px;
+}
+
+#listaTarefas li {
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+}
+
+#listaTarefas li:last-child {
+    border-bottom: none;
+}
+
+/* Estilo para o cabeçalho */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo para a lista de tarefas */
+/* Estilo para a lista de tarefas */
+#listaTarefas {
+    list-style: none;
+    padding: 0;
+    width: 300px;
+}
+
+#listaTarefas li {
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Estilizando o ícone da lixeira */
+.excluir-tarefa {
+    color: #dc3545;
+    margin-left: auto;
+    cursor: pointer;
+    font-size: 18px;
+    /* Tamanho do ícone */
+    transition: color 0.3s ease;
+    /* Efeito de transição na mudança de cor */
+}
+
+/* Efeito de mudança de cor ao passar o mouse */
+.excluir-tarefa:hover {
+    color: #b30015;
+    /* Cor vermelha mais escura ao passar o mouse */
+}
