@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+html {
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Vina+sans-serif&display=swap');
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+* {
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #14293D;
+    /* width: 100vw;
+    height: 100vh; */
+}

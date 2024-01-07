@@ -1,0 +1,23 @@
+.box {
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+}
+
+.item5 {
+    background-color: #444;
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+}
+
+@media (max-width: 500px) {
+
+    .item5 {
+        background-color: #444;
+        grid-column: 2 / 4;
+        grid-row: 8 / 10;
+    }
+
+}

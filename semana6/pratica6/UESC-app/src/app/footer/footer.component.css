@@ -1,0 +1,31 @@
+.box {
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+}
+
+
+.item7 {
+    background-color: #a09696;
+    grid-column: 1 / 5;
+    grid-row: 5/5;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+
+@media (max-width: 500px) {
+
+    .item7 {
+        background-color: #a09696;
+        grid-column: 2 / 4;
+        grid-row: 12/ 14;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+}

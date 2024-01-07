@@ -1,0 +1,24 @@
+.box {
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+}
+
+.item2 {
+    background-color: #444;
+    grid-column: 1 / 1;
+    grid-row: 2 / 4;
+    grid-row-start: 2;
+    font-family: 'Vina Sans', sans-serif;
+}
+
+@media (max-width: 500px) {
+    .item2 {
+        background-color: #444;
+        grid-column: 2 / 4;
+        grid-row: 2 / 4;
+    }
+
+}

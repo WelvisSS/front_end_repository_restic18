@@ -1,0 +1,28 @@
+.box {
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+}
+
+.item1 {
+    grid-column: 1 / 5;
+    background-color: #a09696;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-family: 'Ubuntu';
+    font-size: 22px;
+
+}
+
+@media (max-width: 500px) {
+    .item1 {
+        grid-column: 2 / 4;
+        grid-row: 1 / 2;
+        background-color: #a09696;
+        display: flex;
+        font-family: 'Vina Sans', sans-serif;
+    }
+}
