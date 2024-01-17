@@ -1,0 +1,6 @@
+<p>carrinho works!</p>
+<div class="carrinho-container">
+    <div class="rodape-botoes" *ngIf="exibirBotoesRodape">
+        <button *ngFor="let nomeVeiculo of nomesVeiculos" (click)="acaoBotao1()">{{ nomeVeiculo }}</button>
+    </div>
+</div>
