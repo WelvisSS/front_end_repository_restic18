@@ -1,9 +1,7 @@
-<!-- classes.component.html -->
-
 <input type="file" (change)="onFileSelected($event)" accept=".json" style="margin-bottom: 10px;">
 
-<div class="categorias" appAlinharBotoes>
-    <button class="botao-laranja" [disabled]="!jsonData">Categorias</button>
+<div class="veiculos" appAlinharBotoes>
+    <button class="top-bottom" [disabled]="!jsonData">Veículos</button>
     <button class="botao-azul" (click)="emitirCategoria('Avioes')" [disabled]="!jsonData">Aviões</button>
     <button class="botao-azul" (click)="emitirCategoria('Carros')" [disabled]="!jsonData">Carros</button>
     <button class="botao-azul" (click)="emitirCategoria('Barcos')" [disabled]="!jsonData">Barcos</button>
