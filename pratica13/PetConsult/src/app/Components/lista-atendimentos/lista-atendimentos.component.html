@@ -1,0 +1,23 @@
+<p *ngIf="loadedAtendimentos.length < 1">Não existem passagens cadastradas!</p>
+<table class="tickets-table" *ngIf="loadedAtendimentos.length >=1">
+    <thead>
+        <tr>
+            <th>Data: </th>
+            <th>Número do animal</th>
+            <th>Dono: </th>
+            <th><button style="background-color: rgb(154, 239, 183); color: black; border-radius: 5px;"
+                    (click)="apagarTudo()">Apagar
+                    Tudo</button></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let atendimento of loadedAtendimentos">
+            <td>{{ atendimento.dateAtendimento }}</td>
+            <td>{{ atendimento.especie }}</td>
+            <td>{{ atendimento.petName }}</td>
+
+            <td><button type="button" class="btnEditar"
+                    routerLink="/editarAtendimento/{{atendimento.id}}">Editar</button></td>
+        </tr>
+    </tbody>
+</table>
