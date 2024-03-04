@@ -12,7 +12,7 @@ export class DatabaseConnectionService {
   constructor(private http: HttpClient) { }
 
   getData() {
-    return this.http.get<{ [key: string]: AtendimentoInterface }>('https://database-teste-70ca1-default-rtdb.firebaseio.com/data.json').pipe(map(responseData => {
+    return this.http.get<{ [key: string]: AtendimentoInterface }>('https://petconsult-70db9-default-rtdb.firebaseio.com/data.json').pipe(map(responseData => {
       const postArray: AtendimentoInterface[] = [];
       for (const key in responseData) {
         if (responseData.hasOwnProperty(key)) {
@@ -24,7 +24,7 @@ export class DatabaseConnectionService {
     ));
   }
   postData(data: any) {
-    return this.http.post('https://database-teste-70ca1-default-rtdb.firebaseio.com/data.json', data);
+    return this.http.post('https://petconsult-70db9-default-rtdb.firebaseio.com/data.json', data);
   }
   editarAtendimento(id: string, atendimentoData: {
     dateAtendimento: string,
@@ -35,13 +35,13 @@ export class DatabaseConnectionService {
     obs: string
   }
   ) {
-    return this.http.put(`https://database-teste-70ca1-default-rtdb.firebaseio.com/data/${id}.json`, atendimentoData, { observe: 'response' });
+    return this.http.put(`https://petconsult-70db9-default-rtdb.firebaseio.com/data/${id}.json`, atendimentoData, { observe: 'response' });
   }
   getAtendimentoByID(id: string) {
-    return this.http.get<AtendimentoInterface>(`https://database-teste-70ca1-default-rtdb.firebaseio.com/data/${id}.json`);
+    return this.http.get<AtendimentoInterface>(`https://petconsult-70db9-default-rtdb.firebaseio.com/data/${id}.json`);
   }
 
   apagarTodosAtendimentos() {
-    return this.http.delete('https://database-teste-70ca1-default-rtdb.firebaseio.com/data.json');
+    return this.http.delete('https://petconsult-70db9-default-rtdb.firebaseio.com/data.json');
   }
 }
