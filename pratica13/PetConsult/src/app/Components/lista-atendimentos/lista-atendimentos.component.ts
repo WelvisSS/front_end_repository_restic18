@@ -41,4 +41,9 @@ export class ListaAtendimentosComponent implements OnInit {
     });
   }
 
+  DetalharById(id: any) {
+    var newLoadedAtendimentos = this.loadedAtendimentos.find((atendimento) => atendimento.id = id);
+    console.log(id)
+    alert("Este é o DETALHAMENTO do atendimento: " + JSON.stringify(newLoadedAtendimentos));
+  }
 }

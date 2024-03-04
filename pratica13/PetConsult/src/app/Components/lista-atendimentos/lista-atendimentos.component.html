@@ -3,11 +3,12 @@
     <thead>
         <tr>
             <th>Data: </th>
-            <th>Número do animal</th>
-            <th>Dono: </th>
-            <th><button style="background-color: rgb(154, 239, 183); color: black; border-radius: 5px;"
+            <th>Tipo do pet</th>
+            <th>Tutor(a): </th>
+            <th></th>
+            <th><div class="container-button"><button style="background-color: rgb(154, 239, 183); color: black; border-radius: 5px;"
                     (click)="apagarTudo()">Apagar
-                    Tudo</button></th>
+                    Tudo</button></div></th>
         </tr>
     </thead>
     <tbody>
@@ -16,8 +17,15 @@
             <td>{{ atendimento.especie }}</td>
             <td>{{ atendimento.petName }}</td>
 
-            <td><button type="button" class="btnEditar"
-                    routerLink="/editarAtendimento/{{atendimento.id}}">Editar</button></td>
+            <td>
+                <div class="container-button"><button type="button" class="btnEditar"
+                        routerLink="/editarAtendimento/{{atendimento.id}}">Editar</button></div>
+            </td>
+            <td>
+                <div class="container-button"><button type="button" class="btnEditar"
+                        (click)="DetalharById(atendimento.id)">Detalhar</button></div>
+            </td>
+
         </tr>
     </tbody>
 </table>
