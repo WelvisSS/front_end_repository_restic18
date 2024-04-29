@@ -1,0 +1,49 @@
+<div class="shop-cart">
+  <div class="products">
+    <h2>Produtos</h2>
+    <div class="item" *ngFor="let item of products">
+      <img [src]="item.imgURL" alt="" />
+      <div class="item-details">
+        <span class="item-name">
+          {{ item.name }}
+        </span>
+        <span class="item-price">
+          Valor:
+          {{ item.price | currency : "BRL" : "symbol" : "1.2-2" }}
+        </span>
+      </div>
+      <button (click)="addItem(item)" class="add-button">
+        Adicionar produto
+      </button>
+    </div>
+  </div>
+  <div class="cart-container">
+    <h2>Carrinho</h2>
+    <div class="items">
+      <div class="item" *ngFor="let item of cart()">
+        <img [src]="item.imgURL" alt="" />
+        <div class="item-details">
+          <span class="item-name">
+            {{ item.name }}
+          </span>
+          <span class="item-quantity">
+            Quantidade:
+            {{ item.quantity }}
+          </span>
+          <span class="item-price">
+            Valor:
+            {{
+            item.quantity * item.price | currency : "BRL" : "symbol" : "1.2-2"
+            }}
+          </span>
+        </div>
+        <button (click)="removeItem(item.id)" class="remove-button">
+          Remover produto
+        </button>
+      </div>
+    </div>
+    <div class="total-price">
+      Total da compra: {{ precoTotal() | currency : "BRL" : "symbol" : "1.2-2" }}
+    </div>
+  </div>
+</div>

@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/fea-p006/browser",
+    "public": "dist/ng-rx-v2",
     "ignore": [
       "firebase.json",
       "**/.*",
