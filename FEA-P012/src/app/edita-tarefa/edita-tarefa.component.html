@@ -1,0 +1,8 @@
+<div class="edit">
+  <div class="edit-container">
+    <input id="descricao" [(ngModel)]="description" (keyup.enter)="salvar()" type="text"
+      placeholder="Informe a descrição da tarefa" />
+
+    <button (click)="salvar()">Salvar</button>
+  </div>
+</div>
